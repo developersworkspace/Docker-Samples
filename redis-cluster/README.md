@@ -1,4 +1,4 @@
-# Redis Cluster
+# Running Redis Cluster in a Docker Container
 
 Redis Cluster provides a way to run a Redis installation where data is automatically sharded across multiple Redis nodes.
 Redis Cluster also provides some degree of availability during partitions, that is in practical terms the ability to continue the operations when some nodes fail or are not able to communicate. However the cluster stops to operate in the event of larger failures (for example when the majority of masters are unavailable)." ~ Redis
