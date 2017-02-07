@@ -9,11 +9,11 @@ Clone this repository
 
 `git clone https://github.com/developersworkspace/Docker-Samples.git`
 
-Change your working directory to the 'Redis' sample
+Change your working directory to the 'Redis-Cluster' sample
 
 `cd ./Docker-Samples/redis-cluster`
 
-Run the following commands in the sequence given below
+Run the following commands in the sequence given below to build the individual containers for each of the 6 instances.
 
 `docker build -t redis7001 ./redis7001`
 
@@ -27,13 +27,12 @@ Run the following commands in the sequence given below
 
 `docker build -t redis7006 ./redis7006`
 
-This will the build individual docker containers for each of the 6 instances.
 
 Before we continue we want to change to our home directory
 
 `cd ~`
 
-To run all the containers, run the following commands.
+To run all the containers, execute the following commands
 
 `docker run -d --net=host redis7001`
 
@@ -47,17 +46,17 @@ To run all the containers, run the following commands.
 
 `docker run -d --net=host redis7006`
 
-Now that all 6 instances is up and running we can start to cluster them.
+With all 6 instances running, we are able to start clustering the instances.
 
-To do so, we first need to download the redis source which contains the clustering script.
+To do so, we first need to download the redis source which contains the script for clustering.
 
 `wget http://download.redis.io/releases/redis-stable.tar.gz`
 
-The source that we've downloaded is zipped, we can unzip this by running
+The source that we've downloaded is zipped, we can unzip this by running.
 
 `tar xzf redis-stable.tar.gz`
 
-The script that we'll be using is a ruby script which will require some addtional installs.
+The script that we'll be using is a ruby script which requires some additional installs.
 
 `sudo apt-get install -y ruby & sudo gem install redis`
 
@@ -76,4 +75,30 @@ NOTE: Replace the IP Addresses with the host machine's IP Address.
 ### Why haven't we used Docker Compose
 
 Redis cluster is not compatible with the virtual networks. At the time of writing this document, Redis had no future plans to fix this issue.
+
+The MIT License (MIT)
+=====================
+
+Copyright © `2017` `Barend Erasmus`
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the “Software”), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
 
