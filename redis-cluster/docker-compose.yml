@@ -1,0 +1,32 @@
+version: '2'
+services:
+    redis7001:
+        build: redis7001
+        ports:
+        - "7001:7001"
+        - "17001:17001"
+    redis7002:
+        build: redis7002
+        ports:
+        - "7002:7002"
+        - "17002:17002"
+    redis7003:
+        build: redis7003
+        ports:
+        - "7003:7003"
+        - "17003:17003"
+    redis7004:
+        build: redis7004
+        ports:
+        - "7004:7004"
+        - "17004:17004"
+    redis7005:
+        build: redis7005
+        ports:
+        - "7005:7005"
+        - "17005:17005"
+    redis7006:
+        build: redis7006
+        ports:
+        - "7006:7006"
+        - "17006:17006"
