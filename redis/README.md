@@ -22,6 +22,11 @@ Run your container
 
 You can now connect to your redis instance using a tool such as [Redis Desktop Manager](https://redisdesktop.com)
 
+## Related
+
+* [Running Redis Cluster in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/redis-cluster)
+* [Docker Cheatsheet](https://github.com/developersworkspace/OpenDocs/tree/master/Docker-Cheatsheet)
+
 The MIT License (MIT)
 =====================
 
