@@ -2,9 +2,6 @@
 
 * [Running Redis in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/redis)
 * [Running Redis Cluster in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/redis-cluster)
-
-
-
 * [Back to OpenDocs](https://github.com/developersworkspace/OpenDocs)
 
 
