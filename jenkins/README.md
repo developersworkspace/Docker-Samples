@@ -1,10 +1,18 @@
-# Docker-Samples
+# Running Jenkins in a Docker Container
 
-* [Running Redis in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/redis)
-* [Running Redis Cluster in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/redis-cluster)
-* [Running Jenkins in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/jenkins)
+"The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project." ~ Jenkins
+
+## Getting Started
+
+By running the following command you'll have a Jenkins instance running on port 8080 with a volume mounted to
+'/jenkins' directory on the host machine.
+
+`docker run -p 8080:8080 -p 50000:50000 -v /jenkins:/var/jenkins_home jenkins`
+
+## Related
+
+* [Docker Cheatsheet](https://github.com/developersworkspace/OpenDocs/tree/master/Docker-Cheatsheet)
 * [Back to OpenDocs](https://github.com/developersworkspace/OpenDocs)
-
 
 The MIT License (MIT)
 =====================
