@@ -76,12 +76,6 @@ NOTE: Replace the IP Addresses with the host machine's IP Address.
 
 Redis cluster is not compatible with the virtual networks. At the time of writing this document, Redis had no future plans to fix this issue.
 
-## Related
-
-* [Running Redis in a Docker Container](https://github.com/developersworkspace/Docker-Samples/tree/master/redis)
-* [Docker Cheatsheet](https://github.com/developersworkspace/OpenDocs/tree/master/Docker-Cheatsheet)
-* [Back to OpenDocs](https://github.com/developersworkspace/OpenDocs)
-
 The MIT License (MIT)
 =====================
 

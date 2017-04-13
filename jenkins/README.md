@@ -7,18 +7,21 @@
 By running the following command you'll have a Jenkins instance running on port 8080 with a volume mounted to
 '/jenkins' directory on the host machine.
 
-`docker run -p 8080:8080 -p 50000:50000 -v /jenkins:/var/jenkins_home jenkins`
+`docker run -d -p 8080:8080 -p 50000:50000 -v /jenkins:/var/jenkins_home jenkins`
+
+If you want to run Node commands in your Jenkins build you'll have to install Node along with the packages you require. This can be done by running the following commands which will install Node with a few npm packages such as mocha, typescript, gulp, istanbul and @angular/cli.
+
+`git clone https://github.com/developersworkspace/Docker-Samples.git`
+
+`cd Docker-Samples/Jenkins`
+
+`docker run -d -p 8080:8080 -p 50000:50000 -v /jenkins:/var/jenkins_home ./`
 
 ## Troubleshooting
 
 ### Wrong volume permissions?
 
 `sudo chmod -R 777 /jenkins`
-
-## Related
-
-* [Docker Cheatsheet](https://github.com/developersworkspace/OpenDocs/tree/master/Docker-Cheatsheet)
-* [Back to OpenDocs](https://github.com/developersworkspace/OpenDocs)
 
 The MIT License (MIT)
 =====================
