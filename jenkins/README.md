@@ -13,7 +13,7 @@ If you want to run Node commands in your Jenkins build you'll have to install No
 
 `git clone https://github.com/developersworkspace/Docker-Samples.git`
 
-`cd Docker-Samples/Jenkins`
+`cd ./Docker-Samples/Jenkins`
 
 `docker run -d -p 8080:8080 -p 50000:50000 -v /jenkins:/var/jenkins_home ./`
 
